@@ -1,0 +1,35 @@
+<div class="sc-calendar">
+  <div class="sc-calendar-title">
+    <h2>
+      {{ title }}
+    </h2>
+    <h6>
+      {{ subtitle }}
+    </h6>
+  </div>
+  <table>
+    <tr>
+      <th *ngFor="let heading of headings">
+        <div class="sc-calendar-heading">
+          {{ heading.label }}
+        </div>
+      </th>
+    </tr>
+    <tr *ngFor="let data of calendarData">
+      <td *ngFor="let day of data.days">
+        <div class="sc-calendar-date">
+          <div class="sc-calendar-date-value">
+            <span [class.isToday]="day.isToday">
+              {{ day.date | date: 'MM/dd'	}}
+            </span>
+          </div>
+          <div class="sc-calendar-date-content">
+            <div [class.text-up]="percent > 1" [class.text-down]="percent < 1" [class.text-eq]="percent === 1">
+              {{ day?.events[0]?.title }}
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

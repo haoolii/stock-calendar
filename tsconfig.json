@@ -4,6 +4,15 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@sc/core-ui": [
+        "projects/core-ui/src/public-api"
+      ],
+      "@sc/core-state": [
+        "projects/core-state/src/public-api"
+      ],
+      "@sc/core-utils": [
+        "projects/core-utils/src/public-api"
+      ],
       "core-state": [
         "dist/core-state/core-state",
         "dist/core-state"

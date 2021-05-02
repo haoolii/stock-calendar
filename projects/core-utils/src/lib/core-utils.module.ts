@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CoreUtilsComponent } from './core-utils.component';
 
 
 
 @NgModule({
-  declarations: [
-    CoreUtilsComponent
-  ],
+  declarations: [],
   imports: [
   ],
-  exports: [
-    CoreUtilsComponent
-  ]
+  exports: []
 })
 export class CoreUtilsModule { }

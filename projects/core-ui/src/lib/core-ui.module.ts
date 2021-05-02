@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CoreUiComponent } from './core-ui.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
 @NgModule({
   declarations: [
-    CoreUiComponent
+    CalendarComponent
   ],
   imports: [
+    BrowserModule
   ],
   exports: [
-    CoreUiComponent
+    CalendarComponent
   ]
 })
 export class CoreUiModule { }

@@ -3,5 +3,5 @@
  */
 
 export * from './lib/core-utils.service';
-export * from './lib/core-utils.component';
 export * from './lib/core-utils.module';
+export * from './lib/utils';

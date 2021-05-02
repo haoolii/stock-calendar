@@ -1,0 +1,56 @@
+.sc-calendar {
+  padding: 16px 24px;
+}
+
+.sc-calendar-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 8px 0;
+  color: $primary;
+  h2 {
+    font-size: 48px;
+  }
+  h6 {
+    font-size: 24px;
+  }
+}
+
+.sc-calendar-heading {
+  background: $info;
+  color: $light;
+  padding: 12px 8px;
+}
+
+.sc-calendar-date {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 16px 16px 0;
+  border: 0;
+  border-radius: 8px;
+  transition: background .3s;
+  background: $secondary;
+}
+
+.sc-calendar-date-value {
+  color: rgb(145, 145, 145);
+  font-weight: 500;
+
+}
+
+.sc-calendar-date-content {
+  width: auto;
+  height: 86px;
+  overflow-y: hidden;
+  color: rgba(0,0,0,.85);
+  line-height: 1.5715;
+  text-align: center;
+  font-size: 48px;
+}
+
+.isToday {
+  background: $warning;
+  padding: 4px;
+  border-radius: 4px;
+}
