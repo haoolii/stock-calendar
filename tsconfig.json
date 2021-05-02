@@ -3,6 +3,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "core-state": [
+        "dist/core-state/core-state",
+        "dist/core-state"
+      ],
+      "core-ui": [
+        "dist/core-ui/core-ui",
+        "dist/core-ui"
+      ],
+      "core-utils": [
+        "dist/core-utils/core-utils",
+        "dist/core-utils"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
